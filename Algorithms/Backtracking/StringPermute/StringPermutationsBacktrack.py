@@ -1,14 +1,14 @@
 #Function to print the permutation of a given input string
 
 #function inputs a string as list, the start location and the end location
-def stringPermute(string,a,b):
+def stringPermute(per,a,b):
     if a==b:
         print("".join(string))
     else:
         for i in range(a,b+1):
-            str[a], str[i] = str[i], str[a] 
-            stringPermute(, a+1, b) 
-            str[a], str[i] = str[i], str[a]
+            per[a], per[i] = per[i], per[a] 
+            stringPermute(per, a+1, b) 
+            per[a], per[i] = per[i], per[a]
 
 string="GIT"  #give input string
 init_index=0  #initial index
